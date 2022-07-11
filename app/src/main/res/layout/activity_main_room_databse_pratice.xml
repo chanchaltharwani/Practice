@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivityRoomDatabsePratice">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="Name"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/name"
+                android:background="@null"
+                android:hint="phone"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+<!--            <Button-->
+<!--                android:id="@+id/btndelete"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginStart="1"-->
+<!--                android:layout_marginTop="1"-->
+<!--                android:layout_marginEnd="1"-->
+<!--                android:layout_marginBottom="1"-->
+<!--                android:layout_toRightOf="@+id/phone"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                android:text="delete" />-->
+<!--            <Button-->
+<!--                android:id="@+id/btnupdate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@+id/btndelete"-->
+<!--                android:text="delete"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                />-->
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/design_default_color_on_secondary"
+                android:text="Submit" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relative1"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/RVNamePhone" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

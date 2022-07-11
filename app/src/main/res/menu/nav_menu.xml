@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/service"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="My Services" />
+
+    <item
+        android:id="@+id/schedule"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="My Schedule" />
+    <item
+        android:id="@+id/workout"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Workout" />
+    <item
+        android:id="@+id/mealplan"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Meal Plan" />
+    <item
+        android:id="@+id/Fitnesslog"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Fitness Log" />
+    <item
+        android:id="@+id/referfriends"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Refer Friends" />
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/branch"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Branches" />
+
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Support" />
+
+    <item
+        android:id="@+id/reportbug"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Report a Bug" />
+
+    <item
+        android:id="@+id/terms"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Terms and Condition" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="About" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Logout" />
+</menu>

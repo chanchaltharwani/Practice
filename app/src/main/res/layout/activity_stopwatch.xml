@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_grey"
+        tools:context=".aprilfourteen.StopwatchActivity">
+
+
+        <Chronometer
+            android:id="@+id/stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_40sdp"
+            android:background="@color/white"
+           android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            />
+
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:text="Start"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/stopwatch"/>
+
+        <Button
+            android:id="@+id/btnpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:text="Pause"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/stopwatch"
+            android:layout_toRightOf="@+id/btnstart"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:text="Reset"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/stopwatch"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_normal"
+        android:hint="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/tvphone"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvname"
+        android:background="@drawable/bg_normal"
+        android:hint="Phone"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvphone"
+        android:layout_toRightOf="@+id/tvphone"
+        android:backgroundTint="@color/black"
+        android:text="delete" />
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/btndelete"
+        android:layout_toRightOf="@+id/btndelete"
+        android:text="update"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        />
+</android.support.constraint.ConstraintLayout>

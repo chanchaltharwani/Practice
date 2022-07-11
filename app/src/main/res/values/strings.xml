@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_nav_pratice">BottomNavPraticeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="create_your_diet_workout_plan"><![CDATA[ Workout Plan]]></string>
+    <string name="q_a"><![CDATA[Q&A]]></string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+</resources>

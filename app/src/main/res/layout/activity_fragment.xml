@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".aprilfourpratice.activity.FragmentDemoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="chat"
+            android:background="@color/purple_500"
+            android:padding="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:background="@color/purple_500"
+            android:padding="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnstatus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:background="@color/purple_500"
+            android:padding="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framelayout"
+
+    />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
