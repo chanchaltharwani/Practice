@@ -12,19 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
-            android:name=".activity.NavDrawerActivity"
+            android:name=".tablayout.TabLayoutActivity"
             android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
-            android:name=".activity.bottomjulyActivity"
+            android:name=".apiautozon.AutoApiSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".apiautozon.AutoApiLoginActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".navsidedrawer.NavDrawerActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.bottomjulyActivity"
+            android:exported="true" />
         <activity
             android:name=".camera.CameraActivity"
             android:exported="true" />
@@ -45,7 +57,7 @@
         <activity
             android:name=".aprilfourteen.BottomNavPraticeActivity"
             android:exported="true"
-            android:label="@string/title_activity_bottom_nav_pratice"></activity>
+            android:label="@string/title_activity_bottom_nav_pratice" />
         <activity
             android:name=".aprilfourteen.StopwatchActivity"
             android:exported="true" />

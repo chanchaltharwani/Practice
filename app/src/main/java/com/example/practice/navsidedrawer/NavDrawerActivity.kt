@@ -1,4 +1,4 @@
-package com.example.practice.activity
+package com.example.practice.navsidedrawer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

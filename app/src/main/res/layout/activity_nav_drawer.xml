@@ -5,42 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.NavDrawerActivity">
+    tools:context=".navsidedrawer.NavDrawerActivity">
 
-<androidx.appcompat.widget.Toolbar
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:id="@+id/toolbar"
-    android:background="@color/light_blue_grey"
-    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-    app:popupTheme="@style/AppTheme.PopupOverlay"
 
-    />
-<androidx.drawerlayout.widget.DrawerLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:id="@+id/drawer_layout"
-    android:layout_weight="1"
-    tools:context=".activity.NavDrawerActivity">
-
-    <FrameLayout
+    <!-- step 1   toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/framelayout"
-        />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_blue_grey"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-<com.google.android.material.navigation.NavigationView
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:id="@+id/navigationview"
-    android:layout_gravity="start"
-    android:fitsSystemWindows="true"
-    app:headerLayout="@layout/nav_header"
-    app:menu="@menu/nav_menu"
-    />
+    <!--step 2 drawer layout-->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".navsidedrawer.NavDrawerActivity">
 
-
-
-</androidx.drawerlayout.widget.DrawerLayout>
-
+        <!-- step 3 framelayout for fragments-->
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            <!--step 4 navgation view        -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>
