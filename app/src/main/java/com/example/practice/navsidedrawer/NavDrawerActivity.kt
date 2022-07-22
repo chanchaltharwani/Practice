@@ -6,24 +6,25 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentTransaction
 import com.example.practice.R
+import com.example.practice.databinding.ActivityNavDrawerBinding
 import com.example.practice.fragment.*
-import kotlinx.android.synthetic.main.activity_nav_drawer.*
-
 class NavDrawerActivity : AppCompatActivity() {
+    private lateinit var binding  : ActivityNavDrawerBinding
     lateinit var homefragment: HomeNavFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nav_drawer)
+       binding = DataBindingUtil. setContentView(this , R.layout.activity_nav_drawer)
 
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val drawerToggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
             this,
-            drawer_layout,
-            toolbar,
+          binding.  drawerLayout,
+        binding.    toolbar,
             R.string.drawer_open,
             R.string.drawer_close
         ) {
@@ -41,12 +42,12 @@ class NavDrawerActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().replace(R.id.framelayout, homefragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
         drawerToggle.isDrawerIndicatorEnabled = true
-        drawer_layout.addDrawerListener(drawerToggle)
+        binding.drawerLayout.addDrawerListener(drawerToggle)
         drawerToggle.syncState()
 
 
         //navigation view
-        navigationview.setNavigationItemSelectedListener { item: MenuItem ->
+      binding.  navigationview.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
                 R.id.home -> {
                     loadHome(HomeNavFragment())
@@ -117,7 +118,7 @@ class NavDrawerActivity : AppCompatActivity() {
                 }
 
             }
-            drawer_layout.closeDrawer(GravityCompat.START)
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
 
         }

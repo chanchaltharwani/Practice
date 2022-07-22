@@ -1,6 +1,8 @@
 package com.example.practice.apiautozon
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -64,9 +66,20 @@ class AutoApiLoginActivity : AppCompatActivity() {
                             startActivity(
                                 Intent(
                                     this@AutoApiLoginActivity,
-                                    MainActivityPraticeRV::class.java
+                                    SellAutoZonActivity::class.java
                                 )
                             )
+                            //1st step object bate hai agr fragment m h to requiredactvity lti h
+
+                            var  sharedpreferences : SharedPreferences = getSharedPreferences("my_db", Context.MODE_PRIVATE)
+                            //2nd step editor bnate hai
+                            val editor: SharedPreferences.Editor = sharedpreferences.edit()
+                            //3rd step value put karne k liye
+                            editor.putString("token", response.body()!!.data!!.token)
+                            //4th step commit (save) karte hai
+                            editor.commit()
+
+
                         } else {
                             Toast.makeText(this@AutoApiLoginActivity, "error", Toast.LENGTH_SHORT)
                                 .show()

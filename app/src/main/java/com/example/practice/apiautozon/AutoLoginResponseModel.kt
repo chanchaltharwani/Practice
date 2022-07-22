@@ -11,7 +11,7 @@ data class AutoLoginResponseModel(
 	val code: Int? = null,
 
 	@field:SerializedName("data")
-	val data: UserDetails? = null,
+	val data: Datas? = null,
 
 	@field:SerializedName("authStatus")
 	val authStatus: String? = null,
@@ -90,12 +90,12 @@ data class UserDetails(
 	val pUserHeadquartersAddress: String? = null
 ) : Parcelable
 
-//@Parcelize
-//data class Data(
-//
-//	@field:SerializedName("userDetails")
-//	val userDetails: UserDetails? = null,
-//
-//	@field:SerializedName("token")
-//	val token: String? = null
-//) : Parcelable
+@Parcelize
+data class Datas(
+
+	@field:SerializedName("userDetails")
+	val userDetails: UserDetails? = null,
+
+	@field:SerializedName("token")
+	val token: String? = null
+) : Parcelable

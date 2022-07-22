@@ -10,7 +10,6 @@ import androidx.core.content.FileProvider
 import androidx.databinding.DataBindingUtil
 import com.example.practice.R
 import com.example.practice.databinding.ActivityCameraBinding
-import kotlinx.android.synthetic.main.activity_camera.*
 import java.io.File
 import kotlin.contracts.contract
 
@@ -21,7 +20,7 @@ class CameraActivity : AppCompatActivity() {
     lateinit var btnChange:Button
     lateinit var imageUri: Uri
     private val contract = registerForActivityResult(ActivityResultContracts.TakePicture()){
-        imageView.setImageURI(imageUri)
+        binding.imageView.setImageURI(imageUri)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +32,7 @@ class CameraActivity : AppCompatActivity() {
         btnChange = findViewById(R.id.btnchange)
         imageUri = createImageUri()!!
 
-        btnchange.setOnClickListener {
+       binding. btnchange.setOnClickListener {
             contract.launch(imageUri)
         }
     }

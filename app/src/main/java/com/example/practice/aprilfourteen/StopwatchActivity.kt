@@ -6,7 +6,6 @@ import android.os.SystemClock
 import androidx.databinding.DataBindingUtil
 import com.example.practice.R
 import com.example.practice.databinding.ActivityStopwatchBinding
-import kotlinx.android.synthetic.main.activity_stopwatch.*
 
 class StopwatchActivity : AppCompatActivity() {
     var pauseAt: Long = 0
@@ -18,7 +17,7 @@ class StopwatchActivity : AppCompatActivity() {
 
         binding.btnstart.setOnClickListener {
 
-            stopwatch.base = SystemClock.elapsedRealtime() - pauseAt
+          binding.  stopwatch.base = SystemClock.elapsedRealtime() - pauseAt
 
             binding.stopwatch.start()
 
@@ -26,12 +25,12 @@ class StopwatchActivity : AppCompatActivity() {
         }
 
         binding.btnpause.setOnClickListener {
-            pauseAt = SystemClock.elapsedRealtime() - stopwatch.base
+            pauseAt = SystemClock.elapsedRealtime() -binding. stopwatch.base
             binding.stopwatch.stop()
         }
 
         binding.btnreset.setOnClickListener {
-            stopwatch.base = SystemClock.elapsedRealtime()
+          binding.  stopwatch.base = SystemClock.elapsedRealtime()
         }
 
     }

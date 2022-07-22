@@ -16,8 +16,6 @@ import com.example.practice.database.StudentDatabse
 import com.example.practice.databinding.ActivityMainPraticeRvBinding
 import com.example.practice.databinding.ActivityMainRoomDatabsePraticeBinding
 import com.example.practice.dataclass.Student
-import kotlinx.android.synthetic.main.activity_main_room_databse_pratice.*
-import kotlinx.android.synthetic.main.item_view_name_phone.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -41,7 +39,7 @@ class MainActivityRoomDatabsePratice : AppCompatActivity() {
             GlobalScope.launch {
                 database.studentDao().insertStudent(Student(0, "chanchal tharwani", "8976543234["))
                 database.studentDao()
-                    .insertStudent(Student(0, name.text.toString(), phone.text.toString()))
+                    .insertStudent(Student(0, binding.name.text.toString(),binding. phone.text.toString()))
 
 
             }

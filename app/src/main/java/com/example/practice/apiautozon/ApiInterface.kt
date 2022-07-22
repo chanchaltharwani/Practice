@@ -1,9 +1,8 @@
 package com.example.practice.apiautozon
 
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
+
 interface ApiInterface {
     @FormUrlEncoded
     @POST("api/user/login")//value = end url
@@ -20,5 +19,13 @@ interface ApiInterface {
         @Field("p_user_password") p_user_password: String ,
         @Field("device") device: String = "android"
     ): Call<AutoSignopResponseModel>
+
+    @GET("api/home")//value = end url why pass end url? ask
+    fun getHomeDetails(@Header("authorization") token : String): Call<HomeAutozonResponseModel>
+
+    @POST("api/sell")//value = end url
+    fun sell(
+        @Header("authorization") token : String)
+    : Call<SellAutozonResponseModel>
 
 }

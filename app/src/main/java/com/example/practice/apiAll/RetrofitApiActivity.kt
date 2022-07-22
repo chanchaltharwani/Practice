@@ -7,7 +7,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.practice.R
 import com.example.practice.databinding.ActivityRetrofitApiBinding
-import kotlinx.android.synthetic.main.activity_retrofit_api.*
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
@@ -39,8 +38,8 @@ class RetrofitApiActivity : AppCompatActivity() {
                 if (news != null) {
                     Log.d("apppiii", news.toString())
                     adapter = NewsAdapterApi(this@RetrofitApiActivity,news.articles)
-                    NewsListRv.adapter = adapter
-                    NewsListRv.layoutManager = LinearLayoutManager(this@RetrofitApiActivity)
+                   binding. NewsListRv.adapter = adapter
+                  binding.  NewsListRv.layoutManager = LinearLayoutManager(this@RetrofitApiActivity)
 
 
                 }

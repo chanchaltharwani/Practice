@@ -24,6 +24,6 @@ data class AutoSignopResponseModel(
 ) : Parcelable
 
 @Parcelize
-data class Data(
+data class Dataa(
 	val any: String? = null
 ) : Parcelable
