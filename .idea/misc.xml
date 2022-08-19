@@ -5,18 +5,22 @@
       <map>
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/drawable-v24/circular.xml" value="0.1" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/drawable/bg_normal.xml" value="0.1175" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_after_notification.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_auto_api.xml" value="0.2125" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_auto_api_signup.xml" value="0.1" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_bottom_nav_pratice.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_bottom_navigation2.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_bottomjuly.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_camera.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_fragment.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_home_auto_zon.xml" value="0.2125" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_image_slider_using_view_pager.xml" value="0.11057692307692307" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_main.xml" value="0.1984375" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_main_pratice_rv.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_main_room_databse_pratice.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_nav_drawer.xml" value="0.2" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_notification.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_retrofit_api.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_search_pratice.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/activity_sell_auto_zon.xml" value="0.2125" />
@@ -30,14 +34,20 @@
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_call.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_chat.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_healthy.xml" value="0.21990620114643042" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_healthyfy_pro.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_home.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_home2.xml" value="0.1984375" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_home3.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_home4.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_home_nav.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_inbox_nav.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_library_nav.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_me.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_me2.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_notification.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_photos.xml" value="0.2125" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_plans.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_plans2.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_profile.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_profile2.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/fragment_search.xml" value="0.21666666666666667" />
@@ -52,9 +62,11 @@
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/item_view_name_phone.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/item_view_pratice.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/nav_header.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/slider_image_itemview.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/layout/toolbar.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/bottom_nav_menu_pratice.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/bottomnav.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/menu.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/menubootom.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/garvi/StudioProjects/Practice/app/src/main/res/menu/menusearch.xml" value="0.21666666666666667" />

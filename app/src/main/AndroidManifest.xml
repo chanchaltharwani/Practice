@@ -12,8 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
-            android:name=".bottomnav.BottomNavigationActivity"
+            android:name=".notification.AfterNotification"
             android:exported="false" />
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageSliderUsingViewPagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".bottomnav.BottomNavigationActivity"
+            android:exported="true" />
         <activity
             android:name=".apiautozon.SellAutoZonActivity"
             android:exported="false" />
@@ -25,19 +40,13 @@
             android:exported="false" />
         <activity
             android:name=".apiautozon.AutoApiLoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".apiautozon.HomeAutoZonActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".navsidedrawer.NavDrawerActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".activity.bottomjulyActivity"
             android:exported="true" />

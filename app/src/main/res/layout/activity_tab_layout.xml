@@ -14,13 +14,13 @@
         android:orientation="vertical"
         tools:context=".tablayout.TabLayoutActivity">
 
-
+        <!--step 1 tab layout  -->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
-
+        <!--step 1 view pager -->
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"
             android:layout_height="match_parent"

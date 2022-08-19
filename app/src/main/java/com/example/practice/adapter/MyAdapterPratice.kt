@@ -19,18 +19,12 @@ class MyAdapterPratice(var Songs:List<String>):RecyclerView.Adapter<MyAdapterPra
        val inflater:LayoutInflater = LayoutInflater.from((parent.context))
         val view = inflater.inflate(R.layout.item_view_pratice,parent,false)
         val a = ItemViewPraticeBinding.bind(view)
-
         return MyViewHolder(a)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
     holder.binding.data = Songs[position]
-//     holder.button.setOnClickListener {
-//         startActivity(Intent(this, MainActivity ::class.java))
-//
-//     }
-
     }
 
     override fun getItemCount(): Int {

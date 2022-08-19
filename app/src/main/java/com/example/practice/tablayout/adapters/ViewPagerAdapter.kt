@@ -12,7 +12,7 @@ class ViewPagerAdapter(fragmentManager: FragmentManager,lifecycle: Lifecycle):Fr
     override fun getItemCount(): Int {
         return 3
     }
-
+        //step 3 adapter view pager adapetr bnaege usme saara y wala code likhege
     override fun createFragment(position: Int) : Fragment {
        return  when(position){
            0->{

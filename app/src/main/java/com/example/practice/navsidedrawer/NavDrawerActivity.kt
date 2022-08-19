@@ -11,23 +11,27 @@ import androidx.fragment.app.FragmentTransaction
 import com.example.practice.R
 import com.example.practice.databinding.ActivityNavDrawerBinding
 import com.example.practice.fragment.*
+
 class NavDrawerActivity : AppCompatActivity() {
-    private lateinit var binding  : ActivityNavDrawerBinding
+    private lateinit var binding: ActivityNavDrawerBinding
+    // variable for call the default fragmment
     lateinit var homefragment: HomeNavFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       binding = DataBindingUtil. setContentView(this , R.layout.activity_nav_drawer)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_nav_drawer)
 
+        //step 6   toolbar set karne k liye  setSupportActionBar lgate hai
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val drawerToggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
-            this,
-          binding.  drawerLayout,
-        binding.    toolbar,
-            R.string.drawer_open,
-            R.string.drawer_close
+            this,    //context
+            binding.drawerLayout,  //drawer layout id
+            binding.toolbar,   // toolbar
+            R.string.drawer_open,   //string
+            R.string.drawer_close           //string
         ) {
+            //
             override fun onDrawerClosed(drawerView: View) {
                 super.onDrawerClosed(drawerView)
                 setTitle(R.string.app_name)
@@ -38,6 +42,7 @@ class NavDrawerActivity : AppCompatActivity() {
                 setTitle(R.string.drawer_close)
             }
         }
+        //set default fragment
         homefragment = HomeNavFragment()
         supportFragmentManager.beginTransaction().replace(R.id.framelayout, homefragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
@@ -47,11 +52,11 @@ class NavDrawerActivity : AppCompatActivity() {
 
 
         //navigation view
-      binding.  navigationview.setNavigationItemSelectedListener { item: MenuItem ->
+        binding.navigationview.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
                 R.id.home -> {
                     loadHome(HomeNavFragment())
-    true
+                    true
                 }
                 R.id.profile -> {
                     loadprofile(ProfileNavFragment())
@@ -112,8 +117,7 @@ class NavDrawerActivity : AppCompatActivity() {
                 }
 
 
-
-                else->{
+                else -> {
                     true
                 }
 
@@ -124,6 +128,8 @@ class NavDrawerActivity : AppCompatActivity() {
         }
     }
 
+
+    //step 7 fragment function
     fun loadHome(frag1: HomeNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag1)
@@ -155,11 +161,13 @@ class NavDrawerActivity : AppCompatActivity() {
         ft.replace(R.id.framelayout, frag5)
         ft.commit()
     }
+
     fun loadworkout(frag6: WorkoutNavFragnent) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag6)
         ft.commit()
     }
+
     fun mealplan(frag7: MealPlanNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag7)
@@ -171,41 +179,49 @@ class NavDrawerActivity : AppCompatActivity() {
         ft.replace(R.id.framelayout, frag8)
         ft.commit()
     }
+
     fun referFriend(frag9: ReferFriendsNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag9)
         ft.commit()
     }
+
     fun feedback(frag10: FeedbackNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag10)
         ft.commit()
     }
+
     fun branches(frag11: BranchesFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag11)
         ft.commit()
     }
+
     fun support(frag12: SupportNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag12)
         ft.commit()
     }
+
     fun reportAbug(frag13: ReportABugNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag13)
         ft.commit()
     }
+
     fun terms(frag14: TermsAndConditionNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag14)
         ft.commit()
     }
+
     fun about(frag15: AboutNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag15)
         ft.commit()
     }
+
     fun logout(frag16: LogoutNavFragment) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.framelayout, frag16)

@@ -14,10 +14,12 @@ class TabLayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_tab_layout)
-
+        // variable for viewpager and tablayout  or id add kar denge jo xml file m h
         val viewpager2 = binding.viewPager
         val tablayout = binding.tabLayout
 
+
+        // view pager m adapter set krege
         viewpager2.adapter = ViewPagerAdapter(this.supportFragmentManager,lifecycle)
 
         TabLayoutMediator(tablayout,viewpager2){

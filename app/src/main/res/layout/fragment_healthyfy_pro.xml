@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/light_blue_grey"
-    tools:context=".fragment.PlansFragment">
-
+    tools:context=".bottomnav.fragment.HealthyfyProFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,8 +16,5 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:text="Hello Healthyfy Pro" />
-
-
-
 
 </LinearLayout>
