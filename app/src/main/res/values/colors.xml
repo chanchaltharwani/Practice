@@ -10,5 +10,6 @@
     <color name="light_blue_grey">#ebf2f8</color>
     <color name="dim_grey">#f7f5f5</color>
     <color name="light_color">#DDDDDF</color>
+    <color name="colorFormBackground">#e4e4e4</color>
 
 </resources>
