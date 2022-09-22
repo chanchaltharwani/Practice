@@ -14,14 +14,10 @@ class CallActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
       binding = DataBindingUtil.setContentView(this,R.layout.activity_call)
-
-
-
-
     }
     fun call(view: View) {
         val dialIntent = Intent(Intent.ACTION_DIAL)
-        dialIntent.data = Uri.parse("tel:" + "9983467426")
+        dialIntent.data = Uri.parse("tel:" + "7823096387")
         startActivity(dialIntent)
     }
 

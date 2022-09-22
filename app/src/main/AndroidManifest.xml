@@ -3,7 +3,9 @@
     package="com.example.practice">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,25 +15,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
-            android:name=".call.CallActivity"
+            android:name=".gallryimage.ShareGalleryImageActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.anni.shareimage.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+        <activity
+            android:name=".gallryimage.GalleryImageActivity"
+            android:exported="true">
 
         </activity>
+
+
+
+        <activity
+            android:name=".call.CallActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".passdatausingintent.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".passdatausingintent.PassDataActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".chatapp.ChatActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".notificationprogressbar.AppActivity"
             android:exported="false" />
@@ -55,7 +74,7 @@
             android:exported="false" />
         <activity
             android:name=".tablayout.TabLayoutActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".apiautozon.AutoApiSignupActivity"
             android:exported="false" />
@@ -73,9 +92,7 @@
             android:exported="true" />
         <activity
             android:name=".camera.CameraActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
