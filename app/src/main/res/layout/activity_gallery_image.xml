@@ -21,8 +21,20 @@
             android:id="@+id/buttonLoadPicture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_70sdp"
             android:layout_gravity="center"
             android:layout_weight="0"
             android:text="Load Picture" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:text="hello"/>
+
+
     </LinearLayout>
 </layout>

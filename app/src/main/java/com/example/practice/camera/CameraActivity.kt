@@ -15,7 +15,6 @@ import kotlin.contracts.contract
 
 class CameraActivity : AppCompatActivity() {
     lateinit var binding:ActivityCameraBinding
-
     lateinit var imgview : ImageView
     lateinit var btnChange:Button
     lateinit var imageUri: Uri
@@ -38,6 +37,7 @@ class CameraActivity : AppCompatActivity() {
     }
     private fun createImageUri(): Uri? {
         val image = File(applicationContext.filesDir,"camera_photo.png")
+
         return FileProvider.getUriForFile(applicationContext,"com.example.practice.fileProvider"
         ,image
         )

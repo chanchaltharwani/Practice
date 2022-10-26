@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.practice">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,13 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
-            android:name=".gallryimage.ShareGalleryImageActivity"
+            android:name=".faltufragment.FaltuFragmentActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
+        <activity
+            android:name=".gallryimage.ShareGalleryImageActivity"
+            android:exported="true">
+
+
+
+        </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.anni.shareimage.fileprovider"
@@ -31,17 +39,23 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/paths" />
         </provider>
+
         <activity
             android:name=".gallryimage.GalleryImageActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
-
-
-
         <activity
             android:name=".call.CallActivity"
-            android:exported="true"></activity>
+            android:exported="true" >
+
+
+
+        </activity>
         <activity
             android:name=".passdatausingintent.SecondActivity"
             android:exported="false" />
@@ -50,7 +64,7 @@
             android:exported="true" />
         <activity
             android:name=".chatapp.ChatActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".notificationprogressbar.AppActivity"
             android:exported="false" />
@@ -92,7 +106,9 @@
             android:exported="true" />
         <activity
             android:name=".camera.CameraActivity"
-            android:exported="true" />
+            android:exported="true">
+
+        </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
