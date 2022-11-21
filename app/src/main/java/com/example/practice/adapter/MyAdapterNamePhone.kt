@@ -30,11 +30,11 @@ class MyAdapterNamePhone(val students: List<Student>, var database: StudentDatab
                 database.studentDao().deleteStudent(students[position].id)
             }
         }
-//        holder.buttonupdate.setOnClickListener{
-//            GlobalScope.launch {
-//                database.studentDao().updateStudent(students[id  ])
-//            }
-//        }
+        holder.buttonupdate.setOnClickListener{
+            GlobalScope.launch {
+                database.studentDao().updateStudent(students[position].copy(0,"kkkk","88888"))
+            }
+        }
 
 
     }

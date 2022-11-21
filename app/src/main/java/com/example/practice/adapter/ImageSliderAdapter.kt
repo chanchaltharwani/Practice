@@ -19,9 +19,9 @@ class ImageSliderAdapter:PagerAdapter {
         this.context=context
         this.images=images
     }
-
+    //implement member
     override fun isViewFromObject(view: View, `object`: Any): Boolean = view== `object` as RelativeLayout
-
+    //implement member
     override fun getCount(): Int {
         return images.size
     }
